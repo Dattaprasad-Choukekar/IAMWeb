@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseTemplate" template="/WEB-INF/baseTemplate/baseTemplate.jsp">
+		<put-attribute name="title" value="Base Templete" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content" value="/WEB-INF/baseTemplate/content.jsp" />
+		<put-attribute name="activeNavbarName" value="" />
+	</definition>
+	
+
+
+	<definition name="listIdentities" extends="baseTemplate">
+		<put-attribute name="title" value="List of Identities" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content" value="/WEB-INF/jsp/listIdentities.jsp" />
+		<put-attribute name="activeNavbarName" value="listLi" />
+	</definition>
+
+	<definition name="createIdentity" extends="baseTemplate">
+		<put-attribute name="title" value="Create Identity" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content" value="/WEB-INF/jsp/createIdentity.jsp" />
+		<put-attribute name="activeNavbarName" value="createLi" />
+	</definition>
+
+	<definition name="searchIdentities" extends="baseTemplate">
+		<put-attribute name="title" value="Search Identity" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content" value="/WEB-INF/jsp/searchIdentities.jsp" />
+		<put-attribute name="activeNavbarName" value="searchLi" />
+	</definition>
+
+	<definition name="searchIdentitiesResult" extends="baseTemplate">
+		<put-attribute name="title" value="Search Identity Result" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content"
+			value="/WEB-INF/jsp/searchIdentitiesResult.jsp" />
+		<put-attribute name="activeNavbarName" value="searchLi" />
+	</definition>
+
+	<definition name="updateIdentity" extends="baseTemplate">
+		<put-attribute name="title" value="Update Identity" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content" value="/WEB-INF/jsp/updateIdentity.jsp" />
+	</definition>
+	<definition name="admin" extends="baseTemplate">
+		<put-attribute name="title" value="Admin Page" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content" value="/WEB-INF/jsp/admin.jsp" />
+	</definition>
+
+	<definition name="errorPage" extends="baseTemplate">
+		<put-attribute name="title" value="Update Identity" />
+		<put-attribute name="navbar" value="/WEB-INF/baseTemplate/navbar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/baseTemplate/sidebar.jsp" />
+		<put-attribute name="content" value="/WEB-INF/jsp/errorPageContent.jsp" />
+	</definition>
+</tiles-definitions>

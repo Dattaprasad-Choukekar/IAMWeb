@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ATTRIBUTES [
+<!ELEMENT attributes (attribute+)>
+<!ELEMENT attribute
+(name+)>
+<!ATTLIST attribute isMandatory (true|false) "false">
+<!ATTLIST attribute type (TEXT|DATE|EMAIL|PASSWORD|NUMBER) "TEXT">
+<!ELEMENT name
+(#PCDATA)>
+
+
+]>
+
+
+<!-- type attribute can have one of the values TEXT|DATE|EMAIL|PASSWORD|NUMBER -->
+<attributes>
+	<attribute isMandatory="true" type="TEXT">
+		<name>City</name>
+	</attribute>
+	<attribute isMandatory="false" type="NUMBER">
+		<name>Age</name>
+	</attribute>
+</attributes>
